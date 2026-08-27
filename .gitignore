@@ -1,0 +1,15 @@
+# сырые данные 2ГИС - не публикуем (лицензия)
+data/frozen/
+*.csv
+
+# тяжёлые артефакты - версионируются датами локально, не в git
+data/osm/
+data/processed/
+*.parquet
+*.pkl
+*.osm.pbf
+
+# окружение
+.env
+__pycache__/
+.ipynb_checkpoints/
