@@ -5,7 +5,7 @@ CITIES = ["Москва", "Санкт-Петербург", "Нижний Нов�
 
 # сетка
 CELL_SIZE_M = 500 # размер клетки в метрах
-GRID_VERSION = "v2" # v2 = стабильные границы, зафиксированные в docs/city_bounds.json
+GRID_VERSION = "v3" # v3 = bbox административных границ городов из OSM (docs/city_bounds.json)
 
 
 TARGET_SNAPSHOT_DATE = "2026-04-04" # дата сбора 2ГИС датасета
