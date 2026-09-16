@@ -4,14 +4,12 @@ import json
 import numpy as np
 import pandas as pd
 
-from src.config import CELL_SIZE_M, GRID_VERSION
+from src.config import CELL_SIZE_M, GRID_VERSION, CITY_CODES
 
 BOUNDS_PATH = "docs/city_bounds.json"
 GRID_PATH = f"data/processed/grid_{GRID_VERSION}.parquet"
 METERS_PER_DEG_LAT = 111320.0
 
-CITY_CODES = {"Москва": "msk", "Санкт-Петербург": "spb", "Нижний Новгород": "nnov", 
-              "Новосибирск": "nsk", "Казань": "kzn"}
 
 with open(BOUNDS_PATH, encoding="utf-8") as f:
     bounds = json.load(f)
